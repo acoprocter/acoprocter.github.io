@@ -1,0 +1,112 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+<title>Waikato Tourism guide, Hamilton visitor information, Attractions, Waitomo Caves, Accommodation, Cambridge, Te Aroha</title>
+<meta name="keywords" content="Waikato New Zealand, Hamilton travel guide, visitor information, Waitomo Caves, Cambridge, Te Aroha">
+<meta name="description" content="Waikato tourism guide including Hamilton visitor information, Waitomo Caves attractions, Hamilton accommodation and more.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng( -37.8268, 175.2242),
+	zoom: 9,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Hobbiton Movie Set, Matamata</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Hobbiton Matamata" >
+						<div data-src = "images/banner-waikato-1680.jpg" ></div>
+						<div data-src = "images/banner-waikato-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-waikato-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-waikato-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-waikato-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-waikato-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-waikato-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-waikato-1440.jpg" width="1440" height="430" alt="Hobbiton Matamata" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>Waikato</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="waikato-attractions.html">Waikato Attractions</a></li>
+                        <li><a href="hamilton-accommodation.html">Hamilton Accommodation</a></li>						   
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+							 
+                            <h1>Waikato</h1>
+                            <img src="images/pic-waikato.jpg" alt="Waikato Countryside" class="feature" />
+                            <h2>Just 90 minutes drive south of Auckland brings you to the lush green pastures of Waikato. Home to New Zealand's fourth largest city (Hamilton), this diverse region boasts the country's longest river, the permanent location for the Hobbiton Movie Set and the world famous Waitomo (Glowworm) Caves. </h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+                       <p> It is New Zealand's most important dairy region and is the site of the Ruakura Research Centre, internationally known for dairy research. The mighty Waikato river (420 kms in length) runs through the region's main centre, Hamilton. Historically, the river was an important waterway for steam boats and Maori Canoes. </p>
+
+<h2>Hamilton</h2>
+
+<p>Hamilton is a modern city with a buzzing Cafe culture and offers visitors many attractions such as the beautiful Hamilton Gardens (covering an area of 58 hectares). 
+  Other places in the City worth visiting include the Hamilton Zoo and the Waikato Museum of Art and History and the permanent Maori display (featuring Te Winika, a war canoe and a  Tainui carving). Another major drawcard for the city is the annual Hot Air Balloon Festival which takes place every Autumn. </p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						  <ul>
+						   <li><a href="waikato-attractions.html">Waikato Attractions</a></li>
+                           <li><a href="hamilton-accommodation.html">Hamilton Accommodation</a></li>						   
+						  </ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

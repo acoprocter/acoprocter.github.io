@@ -1,0 +1,112 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+<title>Mount Cook Tourism Guide, Mt Cook Tasman Glacier, New Zealand's Tallest Mountain</title>
+<meta name="keywords" content="Mount Cook, Mt Cook, New Zealand's tallest mountain">
+<meta name="description" content="Mount Cook tourism guide including Mt Cook visitor attractions, Tasman Glacier Lake Tours, tourist attractions and NZ's tallest mountain.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng(-43.7119, 170.1404),
+	zoom: 12,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Aoraki Mount Cook</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Aoraki Mount Cook" >
+						<div data-src = "images/banner-mt-cook-1680.jpg" ></div>
+						<div data-src = "images/banner-mt-cook-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-mt-cook-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-mt-cook-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-mt-cook-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-mt-cook-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-mt-cook-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-mt-cook-1440.jpg" width="1440" height="430" alt="Aoraki Mount Cook" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>Aoraki Mount Cook</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="mt-cook-attractions.html">Mt Cook Attractions</a></li>
+                        <li><a href="mt-cook-accommodation.html">Mt Cook Accommodation</a></li>						
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+							 
+                            <h1>Aoraki / Mt Cook</h1>
+                           <img src="images/pic-mt-cook.jpg" alt="Sheep Musterer Mount Cook" class="feature" />
+                            <h2>Mount Cook National Park is a captivating, yet harsh land of snow, ice and rock. There are 19 peaks over 3,000 metres in the park, including  New Zealand's tallest mountain Aoraki Mount Cook which stands at an altitude of 3,754 metres above sea level. </h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+
+<p>The area provides the visitor fantastic alpine views with many walks that take you to within touching distance of both the Hooker and Tasman Glaciers. Of the many <a href="http://www.doc.govt.nz/parks-and-recreation/tracks-and-walks/canterbury/aoraki-mount-cook/">walks</a> in the area, Kea Point is easy to reach and well worth the 1 hr return trip. It starts at the Hooker Valley camping ground and takes you to a lookout area offering magnificent views of the Mueller Glacier and Mt Cook on a fine day. </p>
+
+<img src="images/mueller-hut.jpg" alt="Mueller Hut and Mt Cook" class="feature-right" />
+
+<p>For the more adventurous, we recommend walking to (and staying at)  the Mueller Hut, a challenging 3-4 hour climb that will reward you with breath-taking views of the southern alps. For keen Naturalists, the park  offers a wide variety of flowering native plants and  unique insect / bird life. The &quot;Cheeky&quot; Kea (Mountain Parrot) is a frequent  visitor  and keeps the locals entertained with it's playfull, inquisitive nature.</p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						  <ul>
+						   <li><a href="mt-cook-attractions.html">Mt Cook Attractions</a></li>
+                           <li><a href="mt-cook-accommodation.html">Mt Cook Accommodation</a></li>						   
+						  </ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

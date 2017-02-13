@@ -1,0 +1,112 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+<title>Christchurch Tourism guide, About Christchurch Visitor information, Attractions, Accommodation</title>
+<meta name="keywords" content="Christchurch New Zealand, About Christchurch">
+<meta name="description" content="Christchurch tourism guide about Christchurch visitor information, attractions, accommodation and more.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng( -43.5321, 172.6362),
+	zoom: 10,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Punting on the Avon river</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Punting on the Avon river" >
+						<div data-src = "images/banner-christchurch-1680.jpg" ></div>
+						<div data-src = "images/banner-christchurch-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-christchurch-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-christchurch-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-christchurch-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-christchurch-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-christchurch-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-christchurch-1440.jpg" width="1440" height="430" alt="Punting on the Avon river" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>Christchurch</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="christchurch-attractions.html">Christchurch Attractions</a></li>
+                        <li><a href="christchurch-accommodation.html">Christchurch Accommodation</a></li>						
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+							 
+                            <h1>Christchurch</h1>
+                           <img src="images/pic-hagley-park.jpg" alt="Hagley Park Christchurch" class="feature" />
+                            <h2>Canterbury is home to the South Island's largest city, Christchurch (population of over 350,000). Also known as the Garden City, Christchurch is exactly that - A city full of gardens, plentiful park areas and  trees. Christchurch's architecture has a very English flavour to it. </h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+
+<p>The city is named after Oxford's Christ Church College, and is full of Gothic styled churches (made of grey and white stone). The Avon River winds it's way leisurely through the city, providing plenty of spots where you can relax under a weeping willow tree and watch the day drift by. </p>
+
+<img src="images/pic-christchurch.jpg" alt="Christchurch Tram and Canterbury Museum" class="feature-right" />
+
+                       <p>Hagley Park is situated near the city centre and stretches over an area of 161 hectares (400 acres). It is but a 10-minute stroll from the commercial centre of the city. The metropolitan centre is dominated by the Cathedral Square - a large, square cobblestone area with a cathedral adjacent to it. Christchurch is very popular for its Art festivals, street entertainers and food stalls from dozens of different countries. </p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						  <ul>
+						   <li><a href="christchurch-attractions.html">Christchurch Attractions</a></li>
+                           <li><a href="christchurch-accommodation.html">Christchurch Accommodation</a></li>						   
+						  </ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

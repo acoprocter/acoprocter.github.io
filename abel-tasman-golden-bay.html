@@ -1,0 +1,114 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+	<title>About Abel Tasman and Golden Bay, Visitor attractions guide, Kayaking, Farewell Spit</title>
+<meta name="keywords" content="Abel Tasman National Park, Golden Bay, Farewell Spit">
+<meta name="description" content="Information about Abel Tasman National Park, the Abel Tasman walkway, kayaking, visitor attractions guide, Golden Bay, Farewell Spit and more.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng(-40.7840, 172.9310),
+	zoom: 9,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Te Pukatea Bay</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Te Pukatea Bay" >
+						<div data-src = "images/banner-abel-tasman-1680.jpg" ></div>
+						<div data-src = "images/banner-abel-tasman-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-abel-tasman-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-abel-tasman-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-abel-tasman-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-abel-tasman-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-abel-tasman-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-abel-tasman-1440.jpg" width="1440" height="430" alt="Te Pukatea Bay" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>Abel Tasman and Golden Bay</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="abel-tasman-attractions.html">Abel Tasman Attractions</a></li>
+                        <li><a href="abel-tasman-accommodation.html">Abel Tasman Accommodation</a></li>						
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+							 
+                            <h1>Abel Tasman and Golden Bay</h1>
+                            <img src="images/pic-abeltasman.jpg" class="feature" />
+                            <h2>New Zealand's smallest National Park, the Abel Tasman is simply a slice of heaven to visit. With subtropical weather, turquoise waters, sheltered inlets and secluded beaches of golden sand; there are few places on earth that surpass the beauty of this area.</h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+                       <p>The Abel Tasman track is a popular 51 km walkway along the coast that takes you through pleasant bush and along side the bays giving you many opportunities to have a dip. There are picturesque areas dotted along the track for you to pitch your tent - however you must pay a camping fee to DOC before you leave.</p>
+                        
+                                          
+                        <h2>About Golden Bay</h2>
+                        
+                        <img src="images/pic-farewellspit.jpg" class="feature-right" />
+                       
+                        <p>Golden bay is a long bay laden with sun drenched golden sand. The best way to explore the area is by car as other transport is limited. Farewell Spit, at the the most northern point of the region, is a must see. The Spit is New Zealand's longest sandspit system, extending eastward in the Tasman Sea for approximately 30 km, but sheltered to the south with tidal mudflats extending up to 6 km seaward at low tide. The spit is host to over 90 bird species including the Black Swan, Australasian Gannet, Caspian Tern, Southern Black-backed Gull, Red-billed Gull and Variable Oystercatcher.</p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						<ul>
+							<li><a href="abel-tasman-attractions.html">Abel Tasman Attractions</a></li>
+                            <li><a href="abel-tasman-accommodation.html">Abel Tasman Accommodation</a></li>						    
+						</ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

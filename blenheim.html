@@ -1,0 +1,109 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+<title>Blenheim Tourism Guide, Wine Tasting, Winery tours, Blenheim Visitor Attractions, information</title>
+<meta name="keywords" content="Blenheim tourism guide, wine tasting, marlborough travel, wine festival, blenheim wine tours, vineyards">
+<meta name="description" content="Blenheim tourism guide including Blenheim visitor attractions, wine tasting winery tours and other tourist attractions.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng( -41.5134, 173.9612),
+	zoom: 10,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Vineyard near Blenheim</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Blenheim Vineyard" >
+						<div data-src = "images/banner-blenheim-1680.jpg" ></div>
+						<div data-src = "images/banner-blenheim-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-blenheim-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-blenheim-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-blenheim-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-blenheim-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-blenheim-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-blenheim-1440.jpg" width="1440" height="430" alt="Blenheim Vineyard" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>Blenheim</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="blenheim-attractions.html">Blenheim Attractions</a></li>
+                        <li><a href="blenheim-accommodation.html">Blenheim Accommodation</a></li>						
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+							 
+                            <h1>Blenheim</h1>
+                            <img src="images/pic-blenheim.jpg" alt="Highfield Estate Winery" class="feature" />
+                            <h2>Blenheim (with a population of over 30,000 people) is the largest town in the region of Marlborough. Dubbed the sunshine capital of New Zealand, Blenheim's warm/dry climate has helped it become the country's largest grape growing and wine making region.</h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+                       <p>Most of the wineries offer you the chance to taste their wines and many have a cafe or restaurant on site. Sauvignon Blanc is the region&#8217;s speciality, but wines made with Chardonnay, Riesling, Pinot Noir, Pinot Gris and Cabernet Sauvignon grapes are also highly acclaimed. Wine trail maps make it easy to find your way around the vineyards. </p>
+
+<p>Every year, the <a href="http://www.wine-marlborough-festival.co.nz/">Marlborough Wine Festival</a> attracts thousands of people from all over New Zealand to savour the stunning wine produced in the Marlborough region. The festival offers something for everyone including wine tasting, wine tutorials,  great food, an Arts/Crafts market day and live music. Blenheim is also located less than an hour from Picton and the beautiful Marlborough Sounds. </p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						  <ul>
+						    <li><a href="blenheim-attractions.html">Blenheim Attractions</a></li>
+                            <li><a href="blenheim-accommodation.html">Blenheim Accommodation</a></li>						    
+						  </ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

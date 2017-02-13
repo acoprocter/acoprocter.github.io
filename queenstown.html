@@ -1,0 +1,110 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+<title>Queenstown Tourism Guide, Queenstown Visitor Information, Attractions Activities Accommodation</title>
+<meta name="keywords" content="Queenstown New Zealand, About Queenstown">
+<meta name="description" content="Queenstown tourism guide including Queenstown visitor information, attractions activities accommodation and more.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng(-45.0312, 168.6626),
+	zoom: 10,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Lake Wakatipu</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Lake Wakatipu" >
+						<div data-src = "images/banner-queenstown-1680.jpg" ></div>
+						<div data-src = "images/banner-queenstown-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-queenstown-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-queenstown-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-queenstown-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-queenstown-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-queenstown-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-queenstown-1440.jpg" width="1440" height="430" alt="Lake Wakatipu" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>Queenstown</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="queenstown-attractions.html">Queenstown Attractions</a></li>
+                        <li><a href="queenstown-accommodation.html">Queenstown Accommodation</a></li>						
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+							 
+                            <h1>Queenstown</h1>
+                           <img src="images/pic-queenstown.jpg" alt="Skyline Gondola and Lake Wakatipu" class="feature" />
+                            <h2>Queenstown was originally set up to host miners during the gold-rush era. The gold supply has since dwindled but residents still sit on a gold mine of beauty. Queenstown has earned itself the reputation of being one of the most scenic areas in New Zealand.</h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+
+<p>Dwarfed by huge snow-capped mountains and adjacent to Lake Wakatipu, this town is totally awe-inspiring and its beauty has visitors struggling for superlatives. Apart from its beauty, the Queenstown area is also a great place to visit if you are an adventure seeker. Beautiful scenery, adventure activities and having lots of fun is what this place is all about. </p>
+
+ <p>Queenstown is an all-year round tourism destination with exhilarating tourist attractions on offer including Bungy Jumping, Jet Boating, Water Skiing, Earnslaw Steamship Boat Cruises, winter snow Skiing at nearby Coronet peak and Remarkables ski-fields plus so much more. We also recommend visiting the untouched beauty of Glenorchy  plus the quaint, historic mining settlement of Arrowtown. </p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						  <ul>
+						   <li><a href="queenstown-attractions.html">Queenstown Attractions</a></li>
+                           <li><a href="queenstown-accommodation.html">Queenstown Accommodation</a></li>						   
+						  </ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

@@ -1,0 +1,113 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+<title>Fox Glacier, Franz Josef Glacier Tourism Guide, visitor information, West Coast Glaciers</title>
+<meta name="keywords" content="Franz Josef Glacier, Fox Glacier, Franz Joseph, Glaciers, Westland">
+<meta name="description" content="Fox Glacier and Franz Josef Glacier tourism guide including visitor information on the west coast glaciers.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng(-43.4225, 170.1148),
+	zoom: 11,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Fox Glacier Guided Walk</span> <span class="more"><a href="http://www.foxguides.co.nz/">
+ More &gt;&gt;</a></span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Guided Glacier Walk Fox Glacier" >
+						<div data-src = "images/banner-glaciers-1680.jpg" ></div>
+						<div data-src = "images/banner-glaciers-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-glaciers-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-glaciers-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-glaciers-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-glaciers-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-glaciers-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-glaciers-1440.jpg" width="1440" height="430" alt="Guided Glacier Walk Fox Glacier" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>Franz Josef and Fox Glacier</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="franz-josef-fox-glacier-attractions.html">Glaciers Attractions</a></li>
+                        <li><a href="franz-josef-fox-glacier-accommodation.html">Glaciers Accommodation</a></li>						
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+							 
+                            <h1>Franz Josef and Fox Glacier</h1>
+                           <img src="images/pic-glaciers.jpg" alt="Franz Josef Glacier" class="feature" />
+                            <h2>Amazing wonders of nature, both Fox Glacier (13 km long) and Franz Josef Glacier (12 km) descend steeply from the snow-covered Southern Alps to lush rainforest at an altitude of less than 300 metres above sea level.  </h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+
+<p>The snow collects in the Nev&eacute; (a huge basin high in the mountains) and the glaciers form from the weighty layers of snow compacting into hard blue ice. The pressure of snow above and gravitational pull force the ice down the valley to 300 metres above sea level. Because of it's steepness and location, Franz Josef Glacier is the most dynamic in the world and responds quickly to variations in precipitation and temperature. You can walk to within metres of the terminal face or take a guided walk on to the glacier itself.  </p>
+
+<img src="images/lake-matheson.jpg" alt="Lake Matheson" class="feature-right" />
+
+<p>For one of New Zealand's most famous postcard views, the dark waters of <a href="http://www.doc.govt.nz/parks-and-recreation/tracks-and-walks/west-coast/glaciers/lake-matheson-walk/" target="_blank">Lake Matheson</a> (located a short drive from Fox Glacier township) provide a picture-perfect reflection of Aoraki/Mount Cook, Mount Tasman and the spectacular southern alps.</p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						  <ul>
+						   <li><a href="franz-josef-fox-glacier-attractions.html">Glaciers Attractions</a></li>
+                           <li><a href="franz-josef-fox-glacier-accommodation.html">Glaciers Accommodation</a></li>						   
+						  </ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

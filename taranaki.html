@@ -1,0 +1,107 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+<title>Taranaki Tourism Guide, New Plymouth travel, visitor information, Mount Taranaki</title>
+<meta name="keywords" content="Taranaki New Zealand, Taranaki travel guide, visitor information, New Plymouth">
+<meta name="description" content="Taranaki tourism guide including Mount Taranaki attractions and New Plymouth visitor information.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng( -39.4488, 174.4483),
+	zoom: 8,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Mt Taranaki</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Mt Taranaki" >
+						<div data-src = "images/banner-taranaki-1680.jpg" ></div>
+						<div data-src = "images/banner-taranaki-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-taranaki-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-taranaki-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-taranaki-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-taranaki-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-taranaki-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-taranaki-1440.jpg" width="1440" height="430" alt="Mt Taranaki" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>Taranaki</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="taranaki-attractions.html">Taranaki Attractions</a></li>
+                        <li><a href="taranaki-accommodation.html">Taranaki Accommodation</a></li>						
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+                    	  <h1>Taranaki</h1>
+                            <img src="images/pic-taranaki.jpg" alt="Brooklands Zoo" class="feature" />
+                          <h2>Boasting magnificent gardens, world class surfing beaches, the iconic snow-capped Mt Taranaki, superb bush/mountain walks, picturesque lakes,  a thriving cafes/restaurant scene, museums, galleries and  other attractions, Taranaki offers something for everyone.</h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+                       <p>New Plymouth is Taranaki's only city and is well regarded for its beautiful parks, gardens, great surfing beaches as well as being close to the region's most famous landmark,  Mount Taranaki. Standing at over 2500 metres tall and snow covered most of the year, it bears a striking resemblance to Japan's Mt Fuji. </p>
+                       <p>Wanganui city is located 2 hours south of New Plymouth and lies at the mouth of New Zealand's longest navigable river, the majestic Whanganui. Palmerston North  is one of the country's most populated provincial centres and is home to NZ's largest agricultural university, Massey University. </p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						  <ul>
+						   <li><a href="taranaki-attractions.html">Taranaki Attractions</a></li>
+                           <li><a href="taranaki-accommodation.html">Taranaki Accommodation</a></li>						   
+						  </ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

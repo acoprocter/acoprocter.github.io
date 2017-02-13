@@ -1,0 +1,109 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+	<title>The Coromandel Tourism Guide, Coromandel visitor information, attractions, accommodation, Cathedral Cove, Pauanui, Whitianga</title>
+<meta name="keywords" content="The Coromandel tourism guide, Thames, Whitianga, Pauanui, Mercury Bay, Whangamata, Waihi, travel information">
+<meta name="description" content="The Coromandel tourism guide including Coromandel visitor information, attractions, accommodation, Pauanui, Whitianga, Cathedral Cove and more.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng(-36.8849, 175.6426),
+	zoom: 9,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Cathedral Cove</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Cathedral Cove" >
+						<div data-src = "images/banner-coromandel-1680.jpg" ></div>
+						<div data-src = "images/banner-coromandel-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-coromandel-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-coromandel-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-coromandel-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-coromandel-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-coromandel-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-coromandel-1440.jpg" width="1440" height="430" alt="Cathedral Cove" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>Coromandel</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="coromandel-attractions.html">Coromandel Attractions</a></li>
+                        <li><a href="coromandel-accommodation.html">Coromandel Accommodation</a></li>						
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+							 
+                            <h1>Coromandel</h1>
+                            <img src="images/pic-coromandel.jpg" class="feature" alt="Te Hoho Rock" />
+                            <h2>A pleasant one and a half hour drive south east of Auckland takes you to the beautiful Coromandel Peninsula. Boasting some of New Zealand's most picturesque beaches, native Pohutukawa trees and rainforest, the Coromandel is a feast for the eyes.</h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+                       <p>The Coromandel's main attraction is its beauty and variety. Dense rainforest, endless bush walks, secluded beaches of white sand, coves and harbours all combine to make this a highly desirable destination. Thames, known as the ‘Gateway to the Coromandel’ in the southwest, is the main regional centre and has a long history of gold and silver mining. The Thames coastline is lined with many native Pohutakawa trees.</p>
+                       
+                       <p>In the northeast, Mercury Bay offers a spectacular coast flanked by islands. Whitianga, the area's main settlement, offers excellent fishing, beach/bushwalks, countless coves and beaches. Two well-known beaches, Cathedral Cove and Hot Water Beach are an absolute must-see. Hot Water beach is named after the thermal springs which bubble up through the sand making it possible to dig your own spa pool.</p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						<ul>
+							<li><a href="coromandel-attractions.html">Coromandel Attractions</a></li>
+                            <li><a href="coromandel-accommodation.html">Coromandel Accommodation</a></li>						
+						</ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

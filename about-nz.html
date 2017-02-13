@@ -1,0 +1,97 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+	<title>Information about New Zealand, General Info about NZ, Facts and Figures</title>
+<meta name="keywords" content="Information about New Zealand, why visit new zealand">
+<meta name="description" content="Information about New Zealand. Facts and figures about NZ.">
+<?php 
+include ('includes/page-head.php'); 
+?>
+	
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng(-41.1606, 172.4060),
+	zoom: 5,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> 
+<?php 
+include ('includes/banner-descr-main.php'); 
+?> More &gt;&gt;</a></span></div>
+					</div>
+				</div>
+			</div>
+
+      <?php 
+include ('includes/main-banner.php'); 
+?>
+			
+			<?php 
+include ('includes/page-nav.php'); 
+?>
+		
+		<div id="main">
+			<ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+				<li>About New Zealand</li>
+			</ul>	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+					<h3>Explore More</h3>
+					<ul>
+						<li><a href="visiting-nz.html">Visiting New Zealand</a></li>
+					
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+						<hgroup>
+							<h1>Information about New Zealand</h1>
+                           <img src="images/pic-teanau.jpg" alt="Te Anau" class="feature" />
+                           <h2>New Zealand (or 'Aotearoa' - Maori for &quot;Land of the long white cloud&quot;), is a land of hidden treasures and vast, unspoilt beauty. At 269,000 square kilometres in area, New Zealand is a comparatively small country made up of 3 main Islands. The North, South and Stewart Islands. Similar in area to Great Britain, It lies 2000 kms east of Australia, north of Antarctica in the south western pacific. </h2>
+          
+						</hgroup>
+					
+					<?php 
+include ('includes/social-plugin.php'); 
+?>
+                    	
+					<p><strong>Why Visit New Zealand?</strong><br>
+The advantage New Zealand has over any other country is that it boasts having virtually all of Natures attractions in one small package. So, when visiting New Zealand, you can do and see more things in a week (by car, bus, motorhome or train), than in any other country. Why? Because New Zealand has everything from warm, sun-drenched beaches to cold snow capped mountains and glaciers. You can walk up the side of active volcanoes, swim with dolphins and be captivated by endless valleys of rain forest. You will be awe-inspired by the impressive fiords of the Deep South west and staggered by the wild and rugged beauty of the west coast. All these attractions are no more than a few hours drive from each other. From huge sweeping mountains and rivers to tranquil, Glacier-fed lakes, when visiting New Zealand, your Itinerary is only restricted by your timetable and imagination. The only complaint visitors have about their NZ holiday is that they haven’t set aside enough time. Along with it’s beauty, New Zealand is also a great place to visit for people seeking adventure and an adrenaline rush. The adventurous can try dozens of activities including Bungee Jumping, rock climbing, skiing, Snow boarding, windsurfing, hang gliding, sky diving, parachuting, river rafting, jet boat riding, mountain climbing, jet skiing, cave-rafting, mountain biking, fishing, kayaking and much more.</p>
+
+<p>For more general information about New Zealand,  visit either the <a href="http://homepages.paradise.net.nz/wmg/">Kiwi Site</a> or <a href="http://en.wikipedia.org/wiki/New_Zealand">Wikipedia</a>.</p>
+					</article>
+					
+				</div>
+				<aside id="sidebar">
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						<ul>
+							<li><a href="visiting-nz.html">Visiting New Zealand</a></li>
+						
+						</ul>
+					</nav>
+					
+					<div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>

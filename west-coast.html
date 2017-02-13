@@ -1,0 +1,113 @@
+<?php 
+include ('includes/page-top.php'); 
+?>
+<title>West Coast NZ Tourism Guide, Westland visitor Information, Pancake Rocks Attractions, Accommodation</title>
+<meta name="keywords" content="Westland, Greymouth, Punakaiki, Pancake Rocks Westport, New Zealand">
+<meta name="description" content="West Coast NZ tourism guide including Westland visitor information, Pancake Rocks Punakaiki, attractions, accommodation and more.">
+	<?php 
+include ('includes/page-head.php'); 
+?>
+	<script type="text/javascript">
+	function initialize() {
+	var mapOptions = {
+	center: new google.maps.LatLng(-42.2400, 171.4550),
+	zoom: 8,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("map"),
+	mapOptions);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script> 
+</head>
+
+<body>
+  
+  <?php include ('includes/ga.php'); ?>
+  
+	<?php 
+include ('includes/page-content-top.php'); 
+?> Pancake Rocks, Punakaiki</span> </div>
+					</div>
+				</div>
+			</div>
+			<div class="main-image">
+				<div class="holder">
+					<div data-picture data-alt = "Pancake Rocks Punakaiki" >
+						<div data-src = "images/banner-west-coast-1920.jpg" ></div>
+                        <div data-src = "images/banner-west-coast-1680.jpg" data-media = "(max-width:1680px)" ></div>
+						<div data-src = "images/banner-west-coast-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/banner-west-coast-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/banner-west-coast-1024.jpg" data-media = "(max-width:1024px)" ></div>
+						<div data-src = "images/banner-west-coast-850.jpg" data-media = "(max-width:850px)" ></div>
+						<div data-src = "images/banner-west-coast-480.jpg" data-media = "(max-width:480px)" ></div>
+						<!--[if (lt IE 9) & (!IEMobile)]>
+						<div data-src="images/banner-west-coast-1440.jpg"></div>
+						<![endif]-->
+						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+						<noscript><img src="images/banner-west-coast-1440.jpg" width="1440" height="430" alt="Pancake Rocks Punakaiki" ></noscript>
+					</div> 
+				</div>
+			</div>
+	<?php 
+include ('includes/page-nav.php'); 
+?>
+		<div id="main">
+			
+            <ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+				<li>West Coast</li>
+            </ul>
+      
+                 	
+			<div class="two-columns">
+				<!-- two-columns start -->
+				<nav class="menu visible-phone">
+				   <h3>Explore More</h3>
+					<ul>
+						<li><a href="west-coast-attractions.html">West Coast Attractions</a></li>
+                        <li><a href="west-coast-accommodation.html">West Coast Accommodation</a></li>						
+					</ul>
+				</nav>
+				<div id="content">
+					<article>
+                    	<hgroup>
+							 
+                            <h1>West Coast</h1>
+                           <img src="images/pic-west-coast.jpg" alt="Knights Point lookout" class="feature" />
+                            <h2>The South Island's West Coast of New Zealand is a narrow coastal strip which runs parallel to the majestic Southern Alps. The Coast's history is carved out of greenstone (jade), gold, coal and timber. This was pioneer country 140 years ago, it's still pioneer country today. </h2>
+							</hgroup>
+                        
+						<?php 
+include ('includes/social-plugin.php'); 
+?>
+
+<p>Stretching 600 kilometres along the western coast of the New Zealand's South Island, the West Coast (often referred to as Westland) is a rugged, primeval region of contrasting features - towering snow-capped mountains, endless rainforests, lowland river valleys, <a href="franz-josef-fox-glacier.html">grinding glaciers</a>, dramatic coastlines, surging rivers and brooding lakes.</p>
+
+<img src="images/pic-pancake-rocks.jpg" alt="Punakaiki Pancake Rocks Blowhole" class="feature-right" />
+
+<p>Greymouth (the West Coast’s Tourism centre) is a busy town servicing the local industries which include mining, forestry, fishing and ecotourism. Greymouth is also known for its Pounamu (&quot;Greenstone&quot;, a form of Jade) carving industry. Hokitika  is well regarded for its greenstone carving industry. More recently, it has gained a reputation for its annual wild food festival. The area is also popular for outdoor activities such as canoeing, rafting, mountain biking and hiking. Punakaiki is home to the famous Pancake rocks, unique pancake-shaped rocks a short walk from the main road.</p>
+                        
+					</article>
+                    
+                    
+                  </div>
+				<aside id="sidebar">
+                    
+					<nav class="menu hidden-phone">
+						<h3>Explore More</h3>
+						  <ul>
+						   <li><a href="west-coast-attractions.html">West Coast Attractions</a></li>
+                           <li><a href="west-coast-accommodation.html">West Coast Accommodation</a></li>						   
+						  </ul>
+					</nav>
+                    
+                    <div id="map"></div>                    
+					
+				</aside>
+			</div>
+		</div>
+		<?php 
+include ('includes/footer.php'); 
+?>
