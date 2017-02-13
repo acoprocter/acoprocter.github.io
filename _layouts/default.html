@@ -60,7 +60,7 @@
                            <input type="hidden" name="search" value="1">  
             </form>
             <div class="photo-inf"><span class="txt"><strong>Photo:</strong>{% if page.banner-descr-main %}{{ page.banner-descr-main }}{% endif %}</span> 
-              <span class="more"><a href="lake-tekapo.html">More &gt;&gt;</a></span>
+              <span class="more"><a href="{{ page.slug }}.html">More &gt;&gt;</a></span>
             </div>
           </div>
         </div>
@@ -68,18 +68,18 @@
 
       <div class="main-image">
         <div class="holder">
-          <div data-picture data-alt = "Lake Tekapo" >
-            <div data-src = "images/banner-tekapo-1680-1.jpg" ></div>
-            <div data-src = "images/banner-tekapo-1440-1.jpg" data-media = "(max-width:1440px)" ></div>
-                        <div data-src = "images/banner-tekapo-1280-1.jpg" data-media = "(max-width:1280px)" ></div>
-                        <div data-src = "images/banner-tekapo-1024-1.jpg" data-media = "(max-width:1024px)" ></div>
-            <div data-src = "images/banner-tekapo-850-1.jpg" data-media = "(max-width:850px)" ></div>
-            <div data-src = "images/banner-tekapo-480-1.jpg" data-media = "(max-width:480px)" ></div>
+          <div data-picture data-alt = "{% if page.banner-descr-main %}{{ page.banner-descr-main }}{% endif %}" >
+            <div data-src = "images/{{ page.slug }}-1680-1.jpg" ></div>
+            <div data-src = "images/{{ page.slug }}-1440-1.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/{{ page.slug }}-1280-1.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/{{ page.slug }}-1024-1.jpg" data-media = "(max-width:1024px)" ></div>
+            <div data-src = "images/{{ page.slug }}-850-1.jpg" data-media = "(max-width:850px)" ></div>
+            <div data-src = "images/{{ page.slug }}-480-1.jpg" data-media = "(max-width:480px)" ></div>
             <!--[if (lt IE 9) & (!IEMobile)]>
-            <div data-src="images/banner-tekapo-1440-1.jpg"></div>
+            <div data-src="images/{{ page.slug }}-1440-1.jpg"></div>
             <![endif]-->
             <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-            <noscript><img src="images/{{ page.banner-image-url }}" width="1440" height="430" alt="Lake Tekapo" ></noscript>
+            <noscript><img src="images/{{ page.slug }}-1440-1.jpg" width="1440" height="430" alt="{% if page.banner-descr-main %}{{ page.banner-descr-main }}{% endif %}" ></noscript>
           </div> 
         </div>
       </div>
