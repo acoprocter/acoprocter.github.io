@@ -1,114 +1,65 @@
-<?php 
-include ('includes/page-top.php'); 
-?>
-<title>Eastland / Hawkes Bay Visitors guide, Hastings tourism, Napier, Gisborne, visitor information</title>
-<meta name="keywords" content="Hawkes Bay, Eastland, Hastings, Napier, Gisborne, travel guide, visitor information">
-<meta name="description" content="Eastland Hawkes Bay visitors guide including Hastings tourism visitor attractions in Napier, Gisborne and more.">
-	<?php 
-include ('includes/page-head.php'); 
-?>
-	<script type="text/javascript">
-	function initialize() {
-	var mapOptions = {
-	center: new google.maps.LatLng(-38.6820, 177.8253),
-	zoom: 7,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-	var map = new google.maps.Map(document.getElementById("map"),
-	mapOptions);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script> 
-</head>
+---
+layout: default
+title: Eastland / Hawkes Bay Visitors guide, Hastings tourism, Napier, Gisborne, visitor information
+keywords: Hawkes Bay, Eastland, Hastings, Napier, Gisborne, travel guide, visitor information
+description: Eastland Hawkes Bay visitors guide including Hastings tourism visitor attractions in Napier, Gisborne and more.
 
-<body>
-  
-  <?php include ('includes/ga.php'); ?>
-  
-	<?php 
-include ('includes/page-content-top.php'); 
-?> Te Mata Peak</span> </div>
-					</div>
-				</div>
-			</div>
-			<div class="main-image">
-				<div class="holder">
-					<div data-picture data-alt = "Te Mata Peak" >
-						<div data-src = "images/banner-hawkes-bay-1680.jpg" ></div>
-						<div data-src = "images/banner-hawkes-bay-1440.jpg" data-media = "(max-width:1440px)" ></div>
-                        <div data-src = "images/banner-hawkes-bay-1280.jpg" data-media = "(max-width:1280px)" ></div>
-                        <div data-src = "images/banner-hawkes-bay-1024.jpg" data-media = "(max-width:1024px)" ></div>
-						<div data-src = "images/banner-hawkes-bay-850.jpg" data-media = "(max-width:850px)" ></div>
-						<div data-src = "images/banner-hawkes-bay-480.jpg" data-media = "(max-width:480px)" ></div>
-						<!--[if (lt IE 9) & (!IEMobile)]>
-						<div data-src="images/banner-hawkes-bay-1440.jpg"></div>
-						<![endif]-->
-						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-						<noscript><img src="images/banner-hawkes-bay-1440.jpg" width="1440" height="430" alt="Te Mata Peak" ></noscript>
-					</div> 
-				</div>
-			</div>
-	<?php 
-include ('includes/page-nav.php'); 
-?>
-		<div id="main">
+slug: banner-hawkes-bay
+banner-descr-main: Te Mata Peak
+more: false
+more-link: 
+permalink: /eastland-hawkes-bay.html
+lat-long: -38.6820, 177.8253
+zoom: 7
+---
+
+<div id="main">
+	
+    <ul class="breadcrumbs">
+		<li><a href="/">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+		<li>Eastland and Hawkes Bay</li>
+    </ul>
+
+         	
+	<div class="two-columns">
+		<!-- two-columns start -->
+		<nav class="menu visible-phone">
+		   <h3>Explore More</h3>
+			<ul>
+				<li><a href="eastland-hawkes-bay-attractions.html">Eastland &amp; Hawkes Bay Attractions</a></li>
+                <li><a href="eastland-hawkes-bay-accommodation.html">Eastland &amp; Hawkes Bay Accommodation</a></li>						
+			</ul>
+		</nav>
+		<div id="content">
+			<article>
+            	<hgroup>
+					 
+                    <h1>Eastland and Hawkes Bay</h1>
+                    <img src="images/pic-hawkes-bay.jpg" alt="Cyclists Te Mata Peak" class="feature" />
+                    <h2>The east coast is best known for its high annual 
+  sunshine hours, long established vineyards, many orchards and an atmosphere 
+  of pure relaxation. The east coast is made up of three parts. East Cape, 
+Poverty Bay and Hawke's bay. Each area has its own distinct landscape.</h2>
+					</hgroup>
+               <p>East Cape in the north is predominantly mountainous and its sparse population is located mainly along the coastline. Further inland, rugged bush-covered hills dominate the landscape. Gisborne is the east cape's main service centre and offers lots of sunnu weather, great surfing and countless vineyards. Gisborne has a high Maori population and offers many surviving examples of native architecture. One such place is at the foot of Titirangi hill where Te Poho-o-Rawiri (a large Maori meeting house) is located. Further south, the Te Urewera National Park contains the largest forested wilderness remaining in the North Island.</p>
+                                
+                <p>The city of Hastings offers Spanish Mission-style architecture and a diverse range of cultural attractions including the Hawkes Bay Exhibition Centre. It's inner city square is a popular venue for community events and is home to a large display of public art works. The city of Napier is renowned for its 1930s Art Deco architecture, Norfolk Pine tree-lined marine parade, great local wineries and fresh produce.</p>
+                
+			</article>
+          </div>
+		<aside id="sidebar">
+            
+			<nav class="menu hidden-phone">
+				<h3>Explore More</h3>
+				<ul>
+				<li><a href="eastland-hawkes-bay-attractions.html">Eastland &amp; Hawkes Bay Attractions</a></li>
+                <li><a href="eastland-hawkes-bay-accommodation.html">Eastland &amp; Hawkes Bay Accommodation</a></li>						
+				</ul>
+			</nav>
+            
+            <div id="map"></div>                    
 			
-            <ul class="breadcrumbs">
-				<li><a href="/">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-				<li>Eastland and Hawkes Bay</li>
-            </ul>
-      
-                 	
-			<div class="two-columns">
-				<!-- two-columns start -->
-				<nav class="menu visible-phone">
-				   <h3>Explore More</h3>
-					<ul>
-						<li><a href="eastland-hawkes-bay-attractions.html">Eastland &amp; Hawkes Bay Attractions</a></li>
-                        <li><a href="eastland-hawkes-bay-accommodation.html">Eastland &amp; Hawkes Bay Accommodation</a></li>						
-					</ul>
-				</nav>
-				<div id="content">
-					<article>
-                    	<hgroup>
-							 
-                            <h1>Eastland and Hawkes Bay</h1>
-                            <img src="images/pic-hawkes-bay.jpg" alt="Cyclists Te Mata Peak" class="feature" />
-                            <h2>The east coast is best known for its high annual 
-          sunshine hours, long established vineyards, many orchards and an atmosphere 
-          of pure relaxation. The east coast is made up of three parts. East Cape, 
-        Poverty Bay and Hawke's bay. Each area has its own distinct landscape.</h2>
-							</hgroup>
-                        
-						<?php 
-include ('includes/social-plugin.php'); 
-?>
-                       <p>East Cape in the north is predominantly mountainous and its sparse population is located mainly along the coastline. Further inland, rugged bush-covered hills dominate the landscape. Gisborne is the east cape's main service centre and offers lots of sunnu weather, great surfing and countless vineyards. Gisborne has a high Maori population and offers many surviving examples of native architecture. One such place is at the foot of Titirangi hill where Te Poho-o-Rawiri (a large Maori meeting house) is located. Further south, the Te Urewera National Park contains the largest forested wilderness remaining in the North Island.</p>
-                        
-                                          
-                                          
-                        <p>The city of Hastings offers Spanish Mission-style architecture and a diverse range of cultural attractions including the Hawkes Bay Exhibition Centre. It's inner city square is a popular venue for community events and is home to a large display of public art works. The city of Napier is renowned for its 1930s Art Deco architecture, Norfolk Pine tree-lined marine parade, great local wineries and fresh produce.</p>
-                        
-					</article>
-                    
-                    
-                  </div>
-				<aside id="sidebar">
-                    
-					<nav class="menu hidden-phone">
-						<h3>Explore More</h3>
-						<ul>
-						<li><a href="eastland-hawkes-bay-attractions.html">Eastland &amp; Hawkes Bay Attractions</a></li>
-                        <li><a href="eastland-hawkes-bay-accommodation.html">Eastland &amp; Hawkes Bay Accommodation</a></li>						
-						</ul>
-					</nav>
-                    
-                    <div id="map"></div>                    
-					
-				</aside>
-			</div>
-		</div>
-		<?php 
-include ('includes/footer.php'); 
-?>
+		</aside>
+	</div>
+</div>
