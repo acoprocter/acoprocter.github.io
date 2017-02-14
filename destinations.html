@@ -1,48 +1,14 @@
-<?php 
-include ('includes/page-top.php'); 
-?>
-<title>New Zealand Tourist Destinations, NZ Visitor Destinations, Places to Visit, places to go</title>
-<meta name="keywords" content="New Zealand destinations, places to visit, nz tourism destinations, visitor.">
-<meta name="description" content="New Zealand Tourist Destinations guide including information on NZ visitor destinations, places to visit, places to go in New Zealand.">
-<?php 
-include ('includes/page-head.php'); 
-?>
-	
-	<script type="text/javascript">
-	function initialize() {
-	var mapOptions = {
-	center: new google.maps.LatLng(-41.1606, 172.4060),
-	zoom: 5,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-	var map = new google.maps.Map(document.getElementById("map"),
-	mapOptions);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script> 
-</head>
+---
+layout: default
+title: New Zealand Tourist Destinations, NZ Visitor Destinations, Places to Visit, places to go
+description: New Zealand Tourist Destinations guide including information on NZ visitor destinations, places to visit, places to go in New Zealand.
+keywords: New Zealand destinations, places to visit, nz tourism destinations, visitor.
+banner-descr-main: Lake Tekapo
+permalink: destinations.html
+slug: banner-tekapo
+lat-long: -41.1606, 172.4060
+---
 
-<body>
-  
-  <?php include ('includes/ga.php'); ?>
-  
-	<?php 
-include ('includes/page-content-top.php'); 
-?> 
-<?php 
-include ('includes/banner-descr-main.php'); 
-?> More &gt;&gt;</a></span></div>
-					</div>
-				</div>
-			</div>
-
-      <?php 
-include ('includes/main-banner.php'); 
-?>
-			
-			<?php 
-include ('includes/page-nav.php'); 
-?>
 		
 		<div id="main">
 			<ul class="breadcrumbs">
@@ -63,10 +29,7 @@ include ('includes/page-nav.php');
 						<hgroup>
 							<h1>New Zealand Tourist Destinations</h1>
                             <img src="images/laketekapo.jpg" alt="Lake Tekapo" class="feature" />
-                            <?php 
-include ('includes/social-plugin.php'); 
-?>
-                            
+                          
                             <h2>New Zealand offers a huge variety of tourist destinations for you to choose from. Whether you want to enjoy fun day shopping in Auckland, an action-packed weekend Bungy Jumping and skiing in Queenstown (or somewhere in between), you can find it here. </h2> 
                             
                             <p>We have compiled a comprehensive listing of 32 places to visit in New Zealand - including the eco-tourism destination of Kaikoura, the Geothermal wonderland of Rotorua, the rugged beauty of Fiordland and many more visitor destinations.</p>
@@ -76,8 +39,6 @@ include ('includes/social-plugin.php');
 					</article>
                     
                     <h2><a href="#northisland">North Island</a> | <a href="#southisland">South Island</a> | <a href="#stewartisland">Stewart Island</a></h2>                   
-                    
-
                     
                    <section class="posts">
                      <h2 id="northisland">North Island</h2>
@@ -322,13 +283,8 @@ include ('includes/social-plugin.php');
 					</nav>
 					
 					<div id="map"></div>
-                    
-					<?php 
-include ('includes/map-adverts.php'); 
-?>
+                 
 				</aside>
 			</div>
 		</div>
-		<?php 
-include ('includes/footer.php'); 
-?>
+		

@@ -2,7 +2,7 @@
 <html>
   <head>
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}</title>
+    <title>{% if page.title %}{{ page.title }}{% endif %}</title>
 
     {% include meta.html %}
 
@@ -28,8 +28,8 @@
     <script type="text/javascript">
       function initialize() {
       var mapOptions = {
-      center: new google.maps.LatLng(-41.1606, 172.4060),
-      zoom: 5,
+      center: new google.maps.LatLng( {% if page.lat-long %}{{ page.lat-long }}{% else %}-41.1606, 172.4060{% endif %}),
+      zoom: {% if page.zoom %}{{ page.zoom }}{% else %}5{% endif %},
       mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       var map = new google.maps.Map(document.getElementById("map"),
@@ -59,8 +59,8 @@
               </fieldset>
                            <input type="hidden" name="search" value="1">  
             </form>
-            <div class="photo-inf"><span class="txt"><strong>Photo:</strong>{% if page.banner-descr-main %}{{ page.banner-descr-main }}{% endif %}</span> 
-              <span class="more"><a href="{{ page.slug }}.html">More &gt;&gt;</a></span>
+            <div class="photo-inf"><span class="txt"><strong>Photo: </strong>{% if page.banner-descr-main %}{{ page.banner-descr-main }}{% endif %}</span> 
+              {% if page.more %}<span class="more"><a href="{% if page.more-link %}{{ page.more-link }}{% else %}{{ page.slug }}.html{% endif %}">More &gt;&gt;</a></span>{% endif %}
             </div>
           </div>
         </div>
@@ -69,17 +69,17 @@
       <div class="main-image">
         <div class="holder">
           <div data-picture data-alt = "{% if page.banner-descr-main %}{{ page.banner-descr-main }}{% endif %}" >
-            <div data-src = "images/{{ page.slug }}-1680-1.jpg" ></div>
-            <div data-src = "images/{{ page.slug }}-1440-1.jpg" data-media = "(max-width:1440px)" ></div>
-                        <div data-src = "images/{{ page.slug }}-1280-1.jpg" data-media = "(max-width:1280px)" ></div>
-                        <div data-src = "images/{{ page.slug }}-1024-1.jpg" data-media = "(max-width:1024px)" ></div>
-            <div data-src = "images/{{ page.slug }}-850-1.jpg" data-media = "(max-width:850px)" ></div>
-            <div data-src = "images/{{ page.slug }}-480-1.jpg" data-media = "(max-width:480px)" ></div>
+            <div data-src = "images/{{ page.slug }}-1680.jpg" ></div>
+            <div data-src = "images/{{ page.slug }}-1440.jpg" data-media = "(max-width:1440px)" ></div>
+                        <div data-src = "images/{{ page.slug }}-1280.jpg" data-media = "(max-width:1280px)" ></div>
+                        <div data-src = "images/{{ page.slug }}-1024.jpg" data-media = "(max-width:1024px)" ></div>
+            <div data-src = "images/{{ page.slug }}-850.jpg" data-media = "(max-width:850px)" ></div>
+            <div data-src = "images/{{ page.slug }}-480.jpg" data-media = "(max-width:480px)" ></div>
             <!--[if (lt IE 9) & (!IEMobile)]>
-            <div data-src="images/{{ page.slug }}-1440-1.jpg"></div>
+            <div data-src="images/{{ page.slug }}-1440.jpg"></div>
             <![endif]-->
             <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-            <noscript><img src="images/{{ page.slug }}-1440-1.jpg" width="1440" height="430" alt="{% if page.banner-descr-main %}{{ page.banner-descr-main }}{% endif %}" ></noscript>
+            <noscript><img src="images/{{ page.slug }}-1440.jpg" width="1440" height="430" alt="{% if page.banner-descr-main %}{{ page.banner-descr-main }}{% endif %}" ></noscript>
           </div> 
         </div>
       </div>
