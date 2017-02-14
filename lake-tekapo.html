@@ -1,108 +1,60 @@
-<?php 
-include ('includes/page-top.php'); 
-?>
-<title>Lake Tekapo Tourism Guide, Tekapo visitor information, attractions, accommodation, flights</title>
-<meta name="keywords" content="lake tekapo, tekapo tourism guide, church of the good shepherd,">
-<meta name="description" content="Lake Tekapo tourism guide including Tekapo visitor information, attractions, accommodation and more.">
-	<?php 
-include ('includes/page-head.php'); 
-?>
-	<script type="text/javascript">
-	function initialize() {
-	var mapOptions = {
-	center: new google.maps.LatLng( -44.0032, 170.4845),
-	zoom: 12,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-	var map = new google.maps.Map(document.getElementById("map"),
-	mapOptions);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script> 
-</head>
+---
+layout: default
+title: Lake Tekapo Tourism Guide, Tekapo visitor information, attractions, accommodation, flights
+keywords: lake tekapo, tekapo tourism guide, church of the good shepherd, flights, tours, attractions
+description: Lake Tekapo tourism guide including Tekapo visitor information, attractions, accommodation and more.
 
-<body>
-  
-  <?php include ('includes/ga.php'); ?>
-  
-	<?php 
-include ('includes/page-content-top.php'); 
-?> Lake Tekapo</span> </div>
-					</div>
-				</div>
-			</div>
-			<div class="main-image">
-				<div class="holder">
-					<div data-picture data-alt = "Lake Tekapo" >
-						<div data-src = "images/banner-tekapo-1680-1.jpg" ></div>
-						<div data-src = "images/banner-tekapo-1440-1.jpg" data-media = "(max-width:1440px)" ></div>
-                        <div data-src = "images/banner-tekapo-1280-1.jpg" data-media = "(max-width:1280px)" ></div>
-                        <div data-src = "images/banner-tekapo-1024-1.jpg" data-media = "(max-width:1024px)" ></div>
-						<div data-src = "images/banner-tekapo-850-1.jpg" data-media = "(max-width:850px)" ></div>
-						<div data-src = "images/banner-tekapo-480-1.jpg" data-media = "(max-width:480px)" ></div>
-						<!--[if (lt IE 9) & (!IEMobile)]>
-						<div data-src="images/banner-tekapo-1440-1.jpg"></div>
-						<![endif]-->
-						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-						<noscript><img src="images/banner-tekapo-1440-1.jpg" width="1440" height="430" alt="Lake Tekapo" ></noscript>
-					</div> 
-				</div>
-			</div>
-	<?php 
-include ('includes/page-nav.php'); 
-?>
-		<div id="main">
+slug: banner-tekapo
+banner-descr-main: Lake Tekapo
+more: false
+more-link: 
+permalink: /lake-tekapo.html
+lat-long: -44.0032, 170.4845
+zoom: 12
+---
+
+<div id="main">
+	
+    <ul class="breadcrumbs">
+		<li><a href="/">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+		<li>Lake Tekapo</li>
+    </ul>
+	<div class="two-columns">
+		<!-- two-columns start -->
+		<nav class="menu visible-phone">
+		   <h3>Explore More</h3>
+			<ul>
+				<li><a href="lake-tekapo-attractions.html">Lake Tekapo Attractions</a></li>
+                <li><a href="lake-tekapo-accommodation.html">Lake Tekapo Accommodation</a></li>						
+			</ul>
+		</nav>
+		<div id="content">
+			<article>
+            	<hgroup>
+					 
+                    <h1>Lake Tekapo</h1>
+                   <img src="images/pic-lake-tekapo.jpg" alt="Church of the good shepherd" class="feature" />
+                    <h2>Almost like an oasis when first glimpsed, Lake Tekapo is a long narrow piece of light blue water which runs up and out of sight to New Zealand's spectacular Southern Alps. The lake's light blue colour is from high levels of glacial silt which reflect against the sun. </h2>
+					</hgroup>
+			<p>The alpine village township of Tekapo is situated at the south end of the lake and offers Cafes, Restaurants, Accommodation and glorious views up the lake to the alps beyond. Make sure you visit the Church of the Good Shepherd, a tiny church made of wood and stone. Known as the gateway to the Mackenzie country and the Southern Alps, Lake Tekapo is  a popular ski resort in the winter and a busy aquatic holiday destination in the summer. The area offers a wealth of rewarding outdoor activities ranging from a gentle stroll around the Lake to adrenaline-packed mountain biking, water and snow skiing. Lake Tekapo has one of the most purest, clear night skies in the world and because of this, Canterbury University operates a astronomical observatory on top of nearby Mt John. Earth and Sky  offer all-year-round tours to view the observatory. Along with the observatory, there is a cafe located at the top of Mt John where you can sit and enjoy the spectacular panoramic alpine views.</p>
+                
+			</article>
+            
+            
+          </div>
+		<aside id="sidebar">
+            
+			<nav class="menu hidden-phone">
+				<h3>Explore More</h3>
+				  <ul>
+				   <li><a href="lake-tekapo-attractions.html">Lake Tekapo Attractions</a></li>
+                   <li><a href="lake-tekapo-accommodation.html">Lake Tekapo Accommodation</a></li>						   
+				  </ul>
+			</nav>
+            
+            <div id="map"></div>                    
 			
-            <ul class="breadcrumbs">
-				<li><a href="/">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-				<li>Lake Tekapo</li>
-            </ul>
-      
-                 	
-			<div class="two-columns">
-				<!-- two-columns start -->
-				<nav class="menu visible-phone">
-				   <h3>Explore More</h3>
-					<ul>
-						<li><a href="lake-tekapo-attractions.html">Lake Tekapo Attractions</a></li>
-                        <li><a href="lake-tekapo-accommodation.html">Lake Tekapo Accommodation</a></li>						
-					</ul>
-				</nav>
-				<div id="content">
-					<article>
-                    	<hgroup>
-							 
-                            <h1>Lake Tekapo</h1>
-                           <img src="images/pic-lake-tekapo.jpg" alt="Church of the good shepherd" class="feature" />
-                            <h2>Almost like an oasis when first glimpsed, Lake Tekapo is a long narrow piece of light blue water which runs up and out of sight to New Zealand's spectacular Southern Alps. The lake's light blue colour is from high levels of glacial silt which reflect against the sun. </h2>
-							</hgroup>
-                        
-						<?php 
-include ('includes/social-plugin.php'); 
-?>
-
-<p>The alpine village township of Tekapo is situated at the south end of the lake and offers Cafes, Restaurants, Accommodation and glorious views up the lake to the alps beyond. Make sure you visit the Church of the Good Shepherd, a tiny church made of wood and stone. Known as the gateway to the Mackenzie country and the Southern Alps, Lake Tekapo is  a popular ski resort in the winter and a busy aquatic holiday destination in the summer. The area offers a wealth of rewarding outdoor activities ranging from a gentle stroll around the Lake to adrenaline-packed mountain biking, water and snow skiing. Lake Tekapo has one of the most purest, clear night skies in the world and because of this, Canterbury University operates a astronomical observatory on top of nearby Mt John. Earth and Sky  offer all-year-round tours to view the observatory. Along with the observatory, there is a cafe located at the top of Mt John where you can sit and enjoy the spectacular panoramic alpine views.</p>
-                        
-					</article>
-                    
-                    
-                  </div>
-				<aside id="sidebar">
-                    
-					<nav class="menu hidden-phone">
-						<h3>Explore More</h3>
-						  <ul>
-						   <li><a href="lake-tekapo-attractions.html">Lake Tekapo Attractions</a></li>
-                           <li><a href="lake-tekapo-accommodation.html">Lake Tekapo Accommodation</a></li>						   
-						  </ul>
-					</nav>
-                    
-                    <div id="map"></div>                    
-					
-				</aside>
-			</div>
-		</div>
-		<?php 
-include ('includes/footer.php'); 
-?>
+		</aside>
+	</div>
+</div>
