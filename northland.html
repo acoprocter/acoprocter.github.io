@@ -1,111 +1,67 @@
-<?php 
-include ('includes/page-top.php'); 
-?>
-	<title>About Northland NZ, Bay of Islands visitor Information, Paihia, Russell, Cape Reinga</title>
-<meta name="keywords" content="Northland, Bay of Islands, Paihia, Russell, Cape Reinga, visitor information">
-<meta name="description" content="About Northland NZ including Bay of Islands visitor information, Paihia attractions, accommodation, Cape Reinga travel and more.">
-	<?php 
-include ('includes/page-head.php'); 
-?>
-	<script type="text/javascript">
-	function initialize() {
-	var mapOptions = {
-	center: new google.maps.LatLng(-35.5795, 173.7624),
-	zoom: 7,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-	var map = new google.maps.Map(document.getElementById("map"),
-	mapOptions);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script> 
-</head>
+---
+layout: default
+title: About Northland NZ, Bay of Islands visitor Information, Paihia, Russell, Cape Reinga
+keywords: Northland, Bay of Islands, Paihia, Russell, Cape Reinga, visitor information
+description: About Northland NZ including Bay of Islands visitor information, Paihia attractions, accommodation, Cape Reinga travel and more.
 
-<body>
-  
-  <?php include ('includes/ga.php'); ?>
-  
-	<?php 
-include ('includes/page-content-top.php'); 
-?> Uretiti Beach</span> </div>
-					</div>
-				</div>
-			</div>
-			<div class="main-image">
-				<div class="holder">
-					<div data-picture data-alt = "Uretiti Beach" >
-						<div data-src = "images/banner-northland-1680.jpg" ></div>
-						<div data-src = "images/banner-northland-1440.jpg" data-media = "(max-width:1440px)" ></div>
-                        <div data-src = "images/banner-northland-1280.jpg" data-media = "(max-width:1280px)" ></div>
-                        <div data-src = "images/banner-northland-1024.jpg" data-media = "(max-width:1024px)" ></div>
-						<div data-src = "images/banner-northland-850.jpg" data-media = "(max-width:850px)" ></div>
-						<div data-src = "images/banner-northland-480.jpg" data-media = "(max-width:480px)" ></div>
-						<!--[if (lt IE 9) & (!IEMobile)]>
-						<div data-src="images/banner-northland-1440.jpg"></div>
-						<![endif]-->
-						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-						<noscript><img src="images/banner-northland-1440.jpg" width="1440" height="430" alt="Uretiti Beach" ></noscript>
-					</div> 
-				</div>
-			</div>
-	<?php 
-include ('includes/page-nav.php'); 
-?>
-		<div id="main">
-			
-            <ul class="breadcrumbs">
-				<li><a href="/">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-				<li>Northland</li>
-            </ul>
-      
-                 	
-			<div class="two-columns">
-				<!-- two-columns start -->
-				<nav class="menu visible-phone">
-				   <h3>Explore More</h3>
-					<ul>
-						<li><a href="northland-attractions.html">Northland Attractions</a></li>
-                        <li><a href="northland-accommodation.html">Northland Accommodation</a></li>						
-					</ul>
-				</nav>
-				<div id="content">
-					<article>
-                    	<hgroup>
-							 
-                            <h1>Northland</h1>
-                            <img src="images/pic-northland.jpg" class="feature" />
-                            <h2>Northland is a region of tidal estuaries, beautiful silver-coloured beaches, mangroves and dense native forests. Also regarded as the birthplace of a nation, it was here (on the 6th of February, 1840) that the Treaty of Waitangi, New Zealand's founding document, was signed.</h2>
-							</hgroup>
-                        
-						<?php 
-include ('includes/social-plugin.php'); 
-?>
-                       <p>Whangarei, Northland's largest settlement and main commercial centre is located further south of Paihia on the east coast. Known for its thriving craft galleries and ethnic restaurants, Whangarei is full of cultural character and rich colonial architecture. Ocean beach, just east of Whangarei, is also well worth a visit. In the far northern tip, Cape Reinga is located on the far northern tip of New Zealand and offers great views of the deep blue Pacific Ocean meeting the Tasman Sea. The white sands of Ninety Mile beach, New Zealand's longest beach, is also a must see.</p>
-                        
-                                          
-                                          
-                        <p>Waipoua forest (on the west coast) is well worth a visit. This native forest contains some of New zealand's last remaining Kauri trees. These towering conifers are amongst some of the tallest trees in the world. Tane Mahuta (Maori for 'Lord of the Forest') stands at 52 metres tall. The Bay of Islands in the east is a sleepy backwater of immense beauty and tranquility. Exploration of the many outlying islands and beaches is a must. Kerikeri, Paihia and Russell are three of the area's main centres. Waitangi (a short walk from Paihia) is where the Treaty of Waitangi was signed in 1840.</p>
-                        
-					</article>
-                    
-                    
-                  </div>
-				<aside id="sidebar">
-                    
-					<nav class="menu hidden-phone">
-						<h3>Explore More</h3>
-						<ul>
-							<li><a href="northland-attractions.html">Northland Attractions</a></li>
-                            <li><a href="northland-accommodation.html">Northland Accommodation</a></li>						    
-						</ul>
-					</nav>
-                    
-                    <div id="map"></div>                    
-				
-				</aside>
-			</div>
-		</div>
-		<?php 
-include ('includes/footer.php'); 
-?>
+slug: banner-northland
+banner-descr-main: Uretiti Beach
+more: false
+more-link: 
+permalink: /northland.html
+lat-long: -35.5795, 173.7624
+zoom: 7
+---
+	
+<div id="main">
+	
+    <ul class="breadcrumbs">
+		<li><a href="/">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+		<li>Northland</li>
+    </ul>
+
+         	
+	<div class="two-columns">
+		<!-- two-columns start -->
+		<nav class="menu visible-phone">
+		   <h3>Explore More</h3>
+			<ul>
+				<li><a href="northland-attractions.html">Northland Attractions</a></li>
+                <li><a href="northland-accommodation.html">Northland Accommodation</a></li>						
+			</ul>
+		</nav>
+		<div id="content">
+			<article>
+            	<hgroup>
+					 
+                    <h1>Northland</h1>
+                    <img src="images/pic-northland.jpg" class="feature" />
+                    <h2>Northland is a region of tidal estuaries, beautiful silver-coloured beaches, mangroves and dense native forests. Also regarded as the birthplace of a nation, it was here (on the 6th of February, 1840) that the Treaty of Waitangi, New Zealand's founding document, was signed.</h2>
+					</hgroup>
+                
+               <p>Whangarei, Northland's largest settlement and main commercial centre is located further south of Paihia on the east coast. Known for its thriving craft galleries and ethnic restaurants, Whangarei is full of cultural character and rich colonial architecture. Ocean beach, just east of Whangarei, is also well worth a visit. In the far northern tip, Cape Reinga is located on the far northern tip of New Zealand and offers great views of the deep blue Pacific Ocean meeting the Tasman Sea. The white sands of Ninety Mile beach, New Zealand's longest beach, is also a must see.</p>
+                
+                                  
+                                  
+                <p>Waipoua forest (on the west coast) is well worth a visit. This native forest contains some of New zealand's last remaining Kauri trees. These towering conifers are amongst some of the tallest trees in the world. Tane Mahuta (Maori for 'Lord of the Forest') stands at 52 metres tall. The Bay of Islands in the east is a sleepy backwater of immense beauty and tranquility. Exploration of the many outlying islands and beaches is a must. Kerikeri, Paihia and Russell are three of the area's main centres. Waitangi (a short walk from Paihia) is where the Treaty of Waitangi was signed in 1840.</p>
+                
+			</article>
+            
+            
+          </div>
+		<aside id="sidebar">
+            
+			<nav class="menu hidden-phone">
+				<h3>Explore More</h3>
+				<ul>
+					<li><a href="northland-attractions.html">Northland Attractions</a></li>
+                    <li><a href="northland-accommodation.html">Northland Accommodation</a></li>						    
+				</ul>
+			</nav>
+            
+            <div id="map"></div>                    
+		
+		</aside>
+	</div>
+</div>
