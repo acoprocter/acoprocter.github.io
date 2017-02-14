@@ -1,111 +1,59 @@
-<?php 
-include ('includes/page-top.php'); 
-?>
-	<title>About Bay of Plenty Tourism Visitors Guide, Tauranga, Mt Maunganui, Attractions Guide, Whakatane Visitor Information</title>
-<meta name="keywords" content="Bay of Plenty Tourism, Travel, Tauranga, Moutn Maunganui, Whakatane Visitor Information">
-<meta name="description" content="About Bay of Plenty tourism visitors guide including Tauranga attractions, Mt Maunganui, Whakatane travel and more.">
-	<?php 
-include ('includes/page-head.php'); 
-?>
-	<script type="text/javascript">
-	function initialize() {
-	var mapOptions = {
-	center: new google.maps.LatLng(-37.7390, 176.5259),
-	zoom: 8,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-	var map = new google.maps.Map(document.getElementById("map"),
-	mapOptions);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script> 
-</head>
+---
+layout: default
+title: About Bay of Plenty Tourism Visitors Guide, Tauranga, Mt Maunganui, Attractions Guide, Whakatane Visitor Information
+keywords: Bay of Plenty Tourism, Travel, Tauranga, Moutn Maunganui, Whakatane Visitor Information
+description: About Bay of Plenty tourism visitors guide including Tauranga attractions, Mt Maunganui, Whakatane travel and more.
 
-<body>
-  
-  <?php include ('includes/ga.php'); ?>
-  
-	<?php 
-include ('includes/page-content-top.php'); 
-?> Main Beach, Mount Maunganui</span> </div>
-					</div>
-				</div>
-			</div>
-			<div class="main-image">
-				<div class="holder">
-					<div data-picture data-alt = "Main Beach Mt Maunganui" >
-						<div data-src = "images/banner-bayofplenty-1680.jpg" ></div>
-						<div data-src = "images/banner-bayofplenty-1440.jpg" data-media = "(max-width:1440px)" ></div>
-                        <div data-src = "images/banner-bayofplenty-1280.jpg" data-media = "(max-width:1280px)" ></div>
-                        <div data-src = "images/banner-bayofplenty-1024.jpg" data-media = "(max-width:1024px)" ></div>
-						<div data-src = "images/banner-bayofplenty-850.jpg" data-media = "(max-width:850px)" ></div>
-						<div data-src = "images/banner-bayofplenty-480.jpg" data-media = "(max-width:480px)" ></div>
-						<!--[if (lt IE 9) & (!IEMobile)]>
-						<div data-src="images/banner-bayofplenty-1440.jpg"></div>
-						<![endif]-->
-						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-						<noscript><img src="images/banner-bayofplenty-1440.jpg" width="1440" height="430" alt="Main Beach Mt Maunganui" ></noscript>
-					</div> 
-				</div>
-			</div>
-	<?php 
-include ('includes/page-nav.php'); 
-?>
-		<div id="main">
+slug: banner-bayofplenty
+banner-descr-main: Main Beach, Mount Maunganui
+more: false
+more-link:
+permalink: /bay-of-plenty.html
+lat-long: -37.7390, 176.5259
+zoom: 8
+---
+
+<div id="main">
+    <ul class="breadcrumbs">
+		<li><a href="/">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+		<li>Bay of Plenty</li>
+    </ul>
+	<div class="two-columns">
+		<!-- two-columns start -->
+		<nav class="menu visible-phone">
+		   <h3>Explore More</h3>
+			<ul>
+				<li><a href="bay-of-plenty-attractions.html">Bay of Plenty Attractions</a></li>
+                <li><a href="bay-of-plenty-accommodation.html">Bay of Plenty Accommodation</a></li>						
+			</ul>
+		</nav>
+		<div id="content">
+			<article>
+            	<hgroup>
+                    <h1>Bay of Plenty</h1>
+                    <img src="images/pic-white-island.jpg" alt="White Island" class="feature" />
+                    <h2>Located southeast of the Coromandel, the Bay of Plenty offers a mild climate, beach after endless beach, kiwi-fruit orchards, green coastal plains and inland forest-laden mountains.</h2>
+				</hgroup>
+               
+               <p>Tauranga, the region's main centre is a large, modern city offering plenty of shopping, boat cruises, nearby scenic coastal walks and many off-shore boating activities. Mount Maunganui (a 232 metre Volcanic cone located near Tauranga) offers some great hiking and magnificent views from the top. Nearby Ocean beach is a popular summer hot spot for holiday-makers and water-lovers a like.</p>
+                                  
+                <p>Te Puke (20 km south) is where many of New Zealand's kiwi-fruit orchards are located. Further east, the pleasant sea-side town of Whakatane offers plenty of pictureque coastline walkways and is an ideal base from which to explore the off-shore phenomenon that is <a href="http://en.wikipedia.org/wiki/Whakaari/White_Island">White Island</a> - an active volcanoe. Helicopter, Fixed-wing and Boat trips are available from Whakatane.</p>
+                
+			</article>
+          </div>
+		<aside id="sidebar">
+            
+			<nav class="menu hidden-phone">
+				<h3>Explore More</h3>
+				<ul>
+					<li><a href="bay-of-plenty-attractions.html">Bay of Plenty Attractions</a></li>
+                    <li><a href="bay-of-plenty-accommodation.html">Bay of Plenty Accommodation</a></li>						    
+				</ul>
+			</nav>
+            
+            <div id="map"></div>                    
 			
-            <ul class="breadcrumbs">
-				<li><a href="/">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-				<li>Bay of Plenty</li>
-            </ul>
-      
-                 	
-			<div class="two-columns">
-				<!-- two-columns start -->
-				<nav class="menu visible-phone">
-				   <h3>Explore More</h3>
-					<ul>
-						<li><a href="bay-of-plenty-attractions.html">Bay of Plenty Attractions</a></li>
-                        <li><a href="bay-of-plenty-accommodation.html">Bay of Plenty Accommodation</a></li>						
-					</ul>
-				</nav>
-				<div id="content">
-					<article>
-                    	<hgroup>
-							 
-                            <h1>Bay of Plenty</h1>
-                            <img src="images/pic-white-island.jpg" alt="White Island" class="feature" />
-                            <h2>Located southeast of the Coromandel, the Bay of Plenty offers a mild climate, beach after endless beach, kiwi-fruit orchards, green coastal plains and inland forest-laden mountains.</h2>
-							</hgroup>
-                        
-						<?php 
-include ('includes/social-plugin.php'); 
-?>
-                       <p>Tauranga, the region's main centre is a large, modern city offering plenty of shopping, boat cruises, nearby scenic coastal walks and many off-shore boating activities. Mount Maunganui (a 232 metre Volcanic cone located near Tauranga) offers some great hiking and magnificent views from the top. Nearby Ocean beach is a popular summer hot spot for holiday-makers and water-lovers a like.</p>
-                        
-                                          
-                                          
-                        <p>Te Puke (20 km south) is where many of New Zealand's kiwi-fruit orchards are located. Further east, the pleasant sea-side town of Whakatane offers plenty of pictureque coastline walkways and is an ideal base from which to explore the off-shore phenomenon that is <a href="http://en.wikipedia.org/wiki/Whakaari/White_Island">White Island</a> - an active volcanoe. Helicopter, Fixed-wing and Boat trips are available from Whakatane.</p>
-                        
-					</article>
-                    
-                    
-                  </div>
-				<aside id="sidebar">
-                    
-					<nav class="menu hidden-phone">
-						<h3>Explore More</h3>
-						<ul>
-							<li><a href="bay-of-plenty-attractions.html">Bay of Plenty Attractions</a></li>
-                            <li><a href="bay-of-plenty-accommodation.html">Bay of Plenty Accommodation</a></li>						    
-						</ul>
-					</nav>
-                    
-                    <div id="map"></div>                    
-					
-				</aside>
-			</div>
-		</div>
-		<?php 
-include ('includes/footer.php'); 
-?>
+		</aside>
+	</div>
+</div>
