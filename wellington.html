@@ -1,112 +1,66 @@
-<?php 
-include ('includes/page-top.php'); 
-?>
-<title>About Wellington Tourism guide, Wellington visitor information, attractions, accommodation</title>
-<meta name="keywords" content="Wellington New Zealand, Wellington travel guide, visitor information">
-<meta name="description" content="About Wellington tourism guide including Wellington visitor information, attractions, accommodation and more.">
-	<?php 
-include ('includes/page-head.php'); 
-?>
-	<script type="text/javascript">
-	function initialize() {
-	var mapOptions = {
-	center: new google.maps.LatLng( -41.2865, 174.7762),
-	zoom: 10,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-	var map = new google.maps.Map(document.getElementById("map"),
-	mapOptions);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script> 
-</head>
+---
+layout: default
+title: About Wellington Tourism guide, Wellington visitor information, attractions, accommodation
+keywords: Wellington New Zealand, Wellington travel guide, visitor information
+description: About Wellington tourism guide including Wellington visitor information, attractions, accommodation and more.
 
-<body>
-  
-  <?php include ('includes/ga.php'); ?>
-  
-	<?php 
-include ('includes/page-content-top.php'); 
-?> Wellington Harbour</span> </div>
-					</div>
-				</div>
-			</div>
-			<div class="main-image">
-				<div class="holder">
-					<div data-picture data-alt = "Wellington Harbour" >
-						<div data-src = "images/banner-wellington-1680.jpg" ></div>
-						<div data-src = "images/banner-wellington-1440.jpg" data-media = "(max-width:1440px)" ></div>
-                        <div data-src = "images/banner-wellington-1280.jpg" data-media = "(max-width:1280px)" ></div>
-                        <div data-src = "images/banner-wellington-1024.jpg" data-media = "(max-width:1024px)" ></div>
-						<div data-src = "images/banner-wellington-850.jpg" data-media = "(max-width:850px)" ></div>
-						<div data-src = "images/banner-wellington-480.jpg" data-media = "(max-width:480px)" ></div>
-						<!--[if (lt IE 9) & (!IEMobile)]>
-						<div data-src="images/banner-wellington-1440.jpg"></div>
-						<![endif]-->
-						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-						<noscript><img src="images/banner-wellington-1440.jpg" width="1440" height="430" alt="Wellington Harbour" ></noscript>
-					</div> 
-				</div>
-			</div>
-	<?php 
-include ('includes/page-nav.php'); 
-?>
-		<div id="main">
+slug: banner-wellington
+banner-descr-main: Wellington Harbour
+more: false
+more-link: 
+permalink: /wellington.html
+lat-long: -41.2865, 174.7762
+zoom: 10
+---
+
+<div id="main">
+	
+    <ul class="breadcrumbs">
+		<li><a href="/">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+		<li>Wellington</li>
+    </ul>
+
+	<div class="two-columns">
+		<!-- two-columns start -->
+		<nav class="menu visible-phone">
+		   <h3>Explore More</h3>
+			<ul>
+				<li><a href="wellington-attractions.html">Wellington Attractions</a></li>
+                <li><a href="wellington-accommodation.html">Wellington Accommodation</a></li>						
+			</ul>
+		</nav>
+		<div id="content">
+			<article>
+            	<hgroup>
+					 
+                    <h1>Wellington</h1>
+                    <img src="images/pic-wellington1.jpg" alt="Wellington Harbour" class="feature" />
+                    <h2>Described as a village with skyscrapers, Wellington is New Zealand's capital offering an unforgettable city experience. Located between a beautiful harbour and towering green hills, Wellington will surprise you with its cultural richness and vibrant atmosphere.</h2>
+					</hgroup>
+               <p>Wellington lays claim to being New Zealand's cultural capital. The city is home to the magnificent national museum, <a href="http://www.tepapa.govt.nz/">Te Papa</a>. A huge building with literally too much to see in one day. </p>
+                
+                  <img src="images/pic-wellington2.jpg" alt="Te Papa" class="feature-right" />                
+                                  
+                <p>Other cultural attractions in the capital include a large selection of performing arts (Theatre, Opera and the New Zealand Symphony Orchestra). Another significant place to visit is the Archives New Zealand building (where New Zealand's founding document, <a href="http://archives.govt.nz/exhibitions/treaty">the Treaty of Waitangi</a>, is located).</p>
+                <p>Whether you enjoy a leisurely-paced stroll along the beautiful coastline or an energy-sapping day of shopping, Wellington will accommodate your needs - and some.</p>
+                
+			</article>
+            
+            
+          </div>
+		<aside id="sidebar">
+            
+			<nav class="menu hidden-phone">
+				<h3>Explore More</h3>
+				  <ul>
+				   <li><a href="wellington-attractions.html">Wellington Attractions</a></li>
+                   <li><a href="wellington-accommodation.html">Wellington Accommodation</a></li>						   
+				  </ul>
+			</nav>
+            
+            <div id="map"></div>                    
 			
-            <ul class="breadcrumbs">
-				<li><a href="/">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-				<li>Wellington</li>
-            </ul>
-      
-                 	
-			<div class="two-columns">
-				<!-- two-columns start -->
-				<nav class="menu visible-phone">
-				   <h3>Explore More</h3>
-					<ul>
-						<li><a href="wellington-attractions.html">Wellington Attractions</a></li>
-                        <li><a href="wellington-accommodation.html">Wellington Accommodation</a></li>						
-					</ul>
-				</nav>
-				<div id="content">
-					<article>
-                    	<hgroup>
-							 
-                            <h1>Wellington</h1>
-                            <img src="images/pic-wellington1.jpg" alt="Wellington Harbour" class="feature" />
-                            <h2>Described as a village with skyscrapers, Wellington is New Zealand's capital offering an unforgettable city experience. Located between a beautiful harbour and towering green hills, Wellington will surprise you with its cultural richness and vibrant atmosphere.</h2>
-							</hgroup>
-                        
-						<?php 
-include ('includes/social-plugin.php'); 
-?>
-                       <p>Wellington lays claim to being New Zealand's cultural capital. The city is home to the magnificent national museum, <a href="http://www.tepapa.govt.nz/">Te Papa</a>. A huge building with literally too much to see in one day. </p>
-                        
-                          <img src="images/pic-wellington2.jpg" alt="Te Papa" class="feature-right" />                
-                                          
-                        <p>Other cultural attractions in the capital include a large selection of performing arts (Theatre, Opera and the New Zealand Symphony Orchestra). Another significant place to visit is the Archives New Zealand building (where New Zealand's founding document, <a href="http://archives.govt.nz/exhibitions/treaty">the Treaty of Waitangi</a>, is located).</p>
-                        <p>Whether you enjoy a leisurely-paced stroll along the beautiful coastline or an energy-sapping day of shopping, Wellington will accommodate your needs - and some.</p>
-                        
-					</article>
-                    
-                    
-                  </div>
-				<aside id="sidebar">
-                    
-					<nav class="menu hidden-phone">
-						<h3>Explore More</h3>
-						  <ul>
-						   <li><a href="wellington-attractions.html">Wellington Attractions</a></li>
-                           <li><a href="wellington-accommodation.html">Wellington Accommodation</a></li>						   
-						  </ul>
-					</nav>
-                    
-                    <div id="map"></div>                    
-					
-				</aside>
-			</div>
-		</div>
-		<?php 
-include ('includes/footer.php'); 
-?>
+		</aside>
+	</div>
+</div>

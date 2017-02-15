@@ -1,56 +1,18 @@
-<?php 
-include ('includes/page-top.php'); 
-?>
-<title>Rotorua Tourism Guide, Visiting Rotorua information, attractions, accommodation</title>
-<meta name="keywords" content="Rotorua New Zealand, Rotorua travel guide, visitor information">
-<meta name="description" content="Rotorua tourism guide featuring information on visiting Rotorua attractions, accommodation, transport and more.">
-	<?php 
-include ('includes/page-head.php'); 
-?>
-	<script type="text/javascript">
-	function initialize() {
-	var mapOptions = {
-	center: new google.maps.LatLng( -38.1268, 176.2497),
-	zoom: 10,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-	var map = new google.maps.Map(document.getElementById("map"),
-	mapOptions);
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script> 
-</head>
+---
+layout: default
+title: Rotorua Tourism Guide, Visiting Rotorua information, attractions, accommodation
+keywords: Rotorua New Zealand, Rotorua travel guide, visitor information
+description: Rotorua tourism guide featuring information on visiting Rotorua attractions, accommodation, transport and more.
 
-<body>
-  
-  <?php include ('includes/ga.php'); ?>
-  
-	<?php 
-include ('includes/page-content-top.php'); 
-?> Lady Knox Geyser</span> </div>
-					</div>
-				</div>
-			</div>
-			<div class="main-image">
-				<div class="holder">
-					<div data-picture data-alt = "Lady Knox Geyser" >
-						<div data-src = "images/banner-rotorua-1680.jpg" ></div>
-						<div data-src = "images/banner-rotorua-1440.jpg" data-media = "(max-width:1440px)" ></div>
-                        <div data-src = "images/banner-rotorua-1280.jpg" data-media = "(max-width:1280px)" ></div>
-                        <div data-src = "images/banner-rotorua-1024.jpg" data-media = "(max-width:1024px)" ></div>
-						<div data-src = "images/banner-rotorua-850.jpg" data-media = "(max-width:850px)" ></div>
-						<div data-src = "images/banner-rotorua-480.jpg" data-media = "(max-width:480px)" ></div>
-						<!--[if (lt IE 9) & (!IEMobile)]>
-						<div data-src="images/banner-rotorua-1440.jpg"></div>
-						<![endif]-->
-						<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
-						<noscript><img src="images/banner-rotorua-1440.jpg" width="1440" height="430" alt="Lady Knox Geyser" ></noscript>
-					</div> 
-				</div>
-			</div>
-	<?php 
-include ('includes/page-nav.php'); 
-?>
+slug: banner-rotorua
+banner-descr-main: Lady Knox Geyser
+more: false
+more-link: 
+permalink: /rotorua.html
+lat-long: -38.1268, 176.2497
+zoom: 10
+---
+
 		<div id="main">
 			
             <ul class="breadcrumbs">
@@ -78,10 +40,6 @@ include ('includes/page-nav.php');
                             <h2>Rotorua is famous for its geothermal activity, and visitors will notice a strong pungent sulphur smell.
   Because the earth's crust beneath Rotorua is so thin, steamy geysers have popped up in many places. There are many walkways which provide views of this awesome activity.</h2>
 							</hgroup>
-                        
-						<?php 
-include ('includes/social-plugin.php'); 
-?>
                        <p>
   The four main Geothermal areas in the Rotorua area are;<br />
   -  Whakarewarewa Thermal Reserve, on the southern outskirts of Rotorua.<br />
@@ -94,8 +52,7 @@ include ('includes/social-plugin.php');
 <p>Rotorua is a great destination if you like fishing and water sports. There are many beautiful lakes in the area - the largest being Lake Rotorua, Lake Tarawera and Lake Rotoiti. Best of all, they are all located just a few minutes from the City.</p>
                         
 					</article>
-                    
-                    
+                   
                   </div>
 				<aside id="sidebar">
                     
@@ -112,6 +69,3 @@ include ('includes/social-plugin.php');
 				</aside>
 			</div>
 		</div>
-		<?php 
-include ('includes/footer.php'); 
-?>
