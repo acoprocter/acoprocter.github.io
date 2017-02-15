@@ -37,8 +37,8 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script> 
-
-
+    
+    {% include analytics.html %}
   </head>
 
   <body>
@@ -229,8 +229,6 @@
       </nav>
           </header>
 {{ content }}
-
-    {% include analytics.html %}
   
 <footer id="footer">
       <div class="footer-holder">
