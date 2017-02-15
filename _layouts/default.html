@@ -53,9 +53,9 @@
             <li><a href="transport.html">Transport Options</a></li>                                                     
           </ul>
           <div class="search-block">
-            <form action="/search/search.php" method="get">
+            <form action="/search.html" method="get">
               <fieldset>
-                <input class="search-text" type="text" name="query" placeholder="Search" />
+                <input id="search-box" class="search-text" type="text" name="query" placeholder="Search" />
               </fieldset>
                            <input type="hidden" name="search" value="1">  
             </form>
@@ -228,15 +228,10 @@
         </div>
       </nav>
           </header>
-
-
-
 {{ content }}
-   
 
     {% include analytics.html %}
   
-
 <footer id="footer">
       <div class="footer-holder">
         <p class="copy">&copy; NZ Escape Ltd</p>
@@ -251,4 +246,3 @@
   </div>
 </body>
 </html>
-  
