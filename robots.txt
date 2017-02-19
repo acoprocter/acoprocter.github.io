@@ -1,0 +1,12 @@
+Redirect 301 /new-zealand-rental-cars.html /rental-cars.html
+Redirect 301 /new-zealand-campervans.html /campervans.html
+Redirect 301 /new-zealand-tours.html /tours.html
+Redirect 301 /westland.html /west-coast.html
+Redirect 301 /westland-attractions.html /west-coast-attractions.html
+Redirect 301 /westland-accommodation.html /west-coast-accommodation.html
+Redirect 301 /about-newzealand.html /about-nz.html
+Redirect 301 /tourismadvertising.html /advertising.html
+Redirect 301 /abel-tasman-golden-bay-accommodation.html /abel-tasman-accommodation.html
+Redirect 301 /abel-tasman-golden-bay-attractions.html /abel-tasman-attractions.html
+
+SITEMAP: http://www.nzescape.com/sitemap.xml
